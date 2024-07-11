@@ -7,10 +7,17 @@ https://www.tooplate.com/view/2115-marvel
 */
 
 
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Hind");
 body {
-  font-family: "Maven Pro", sans-serif;
-  padding-top: 70px;
+  font-family: "Hind";
+  padding-top: 4rem;
+  background-color: #fbfffe;
+}
+
+.image-svg {
+  filter: drop-shadow(0 0 0.5rem rgb(184, 187, 215));
+  padding: 1rem;
 }
 
 .full-screen {
@@ -40,66 +47,111 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  color: #725cff !important;
 }
 
 .navbar-brand .uil {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-  color: #5b5b5b;
+  color: #161719;
+  font-family: "Hind";
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: -1px;
+  
+}
+
+.title-header {
+ color: #161719;
 }
 
 h1 {
   color: #212121;
   font-size: 2.8em;
   margin: 24px 0;
+  font-family: "Montserrat"
 }
 
 h2 {
-  color: #353535;
+  color: #161719;
   font-size: 2.4em;
   font-weight: bold;
+  font-family: "Montserrat"
 }
 
 h3 {
-  color: #484848;
+  color: #161719;
+  font-family: "Montserrat"
 }
 
 h3,
 b, strong {
   font-weight: bold;
+  font-family: "Montserrat"
 }
 
 .custom-btn {
-  background: #eee;
-  color: #5b5b5b;
-  font-weight: bold;
+  background: #EAEAEC;
+  color: #161719;
+  font-weight: 500;
   border-radius: 50px;
+  font-family: "Montserrat";
   padding: 13px 29px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: normal;
   overflow: hidden;
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #ffc200;
+  color: #725cff;
+  font-family: "Montserrat";
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #725cff;
   color: #ffffff;
+  font-family: "Montserrat";
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ffc200;
+  background: #161719;
+  color: #ffffff !important;
+  font-family: "Montserrat";
+}
+
+.number-title {
+  font-weight: 900;
+  color: #725CFF;
+  margin-right: 1rem;
+}
+
+.number-header {
+  font-weight: 900;
+  color: #161719;
+}
+
+.custom-btn2 {
+  color: #161719;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 13px 29px;
+  font-size: 22px;
+  line-height: normal;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.custom-btn2:hover {
+  color: #725cff;
+}
+.custom-btn2.custom-btn-bg {
+  color: #ffffff;
+}
+.custom-btn2.custom-btn-bg:hover {
   color: #ffffff !important;
 }
 
@@ -111,18 +163,18 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
-  min-width: 260px;
+  min-width: 500px;
   position: relative;
 }
 
 .animated-item {
-  color: #ffc200;
+  color: #725CFF;
 }
 
 .animated-item {
   font-size: 38px;
   line-height: inherit;
-  display: block;
+  display: inline-block;
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -167,6 +219,7 @@ b, strong {
 }
 .navbar {
   position: fixed;
+  border-bottom: 1px solid #f0f0f0;
   top: 0;
   right: 0;
   left: 0;
@@ -196,12 +249,14 @@ b, strong {
 }
 
 .nav-link {
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 500;
+  
+  font-size: 18px;
   overflow: hidden;
 }
 .nav-link span {
   position: relative;
+  
   display: inline-block;
   transition: transform 0.3s;
 }
@@ -212,14 +267,19 @@ b, strong {
   transform: translate3d(0, 0, 0);
 }
 
+.navbar-light .navbar-nav .nav-link {
+color: #161719;
+}
+
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #725cff;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
 .navbar-light .navbar-nav .nav-link:hover span {
   transform: translateY(-100%);
+  
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -296,7 +356,7 @@ b, strong {
   color: rgba(255, 255, 255, 0.8);
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #725cff;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
@@ -398,7 +458,7 @@ b, strong {
   font-size: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-  color: #ffc200;
+  color: #725cff;
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -426,14 +486,146 @@ b, strong {
   font-weight: bold;
   margin: 16px 0;
 }
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skill-card {
+    background-color: #EAEAEC;
+    color: #161719;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #725CFF;
+    transition: width 2s;
+}
+
+
+
+.timeline-section {
+    background-color: #fbfffe;
+    padding: 60px 0;
+    text-align: left;
+}
+
+.timeline-section h2 {
+    margin-bottom: 40px;
+    color: #343a40;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #725CFF;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.timeline-item::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #ffffff;
+    border: 4px solid #725CFF;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even) {
+    left: 0;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .contact-form .form-control:not(textarea) {
   height: 48px;
 }
 .contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #ffc200;
+  border-color: #725cff;
 }
 .contact-form .submit-btn {
-  background: #ffc200;
+  background: #725cff;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -462,7 +654,7 @@ b, strong {
   margin: 5px 0;
 }
 .social-links .uil:hover {
-  color: #ffc200;
+  color: #725cff;
 }
 
 @media (min-width: 1270px) {

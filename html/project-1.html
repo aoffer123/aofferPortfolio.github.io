@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat");
+    @import url("https://fonts.googleapis.com/css?family=Hind");
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hind";
+    padding-top: 4rem;
+    background-color: #fbfffe; /* Optional: set a background color */
+    }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px; /* Optional: add rounded corners */
+    overflow: hidden;
+}
+
+.project-image {
+    flex: 1 1 60%;
+    max-width: 60%;
+    padding: 10px;
+}
+
+.project-details {
+    flex: 1 1 40%;
+    max-width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 0.5rem rgb(184, 187, 215));
+}
+
+.project-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "Hind";
+}
+
+.project-details .project-info {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+    .project-image, .project-details {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .project-details {
+        padding: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid project-container">
+        <div class="project-image">
+            <img src="../images/project/Body2.svg" alt="Project Image">
+        </div>
+        <div class="project-details">
+            <h1>Fooducate</h1>
+            <p>I made an app for Detroit's sushi restaurant, Maru, to deliver meals directly to the doors of customers.</p>
+            <p class="project-info">The Product:</p>
+            <p>Detroit sushi restaurant needs an app for delivery orders.</p>
+            <p class="project-info">Project Duration:</p>
+            <p>January - March 2022</p>
+            <p class="project-info">The Problem:</p>
+            <p>During the pandemic, people are ordering delivery more often. This app helps fill that need by delivering on demand.</p>
+            <p class="project-info">The Goal:</p>
+            <p>[Your goal description here]</p>
+        </div>
+    </div>
+</body>
+</html>
