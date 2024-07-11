@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-header {
  color: #161719;
+ font-family: "Montserrat";
 }
 
 h1 {
@@ -103,7 +104,7 @@ b, strong {
   color: #161719;
   font-weight: 500;
   border-radius: 50px;
-  font-family: "Montserrat";
+  font-family: "Hind";
   padding: 13px 29px;
   font-size: 16px;
   line-height: normal;
@@ -112,17 +113,17 @@ b, strong {
 }
 .custom-btn:hover {
   color: #725cff;
-  font-family: "Montserrat";
+  font-family: "Hind";
 }
 .custom-btn.custom-btn-bg {
   background: #725cff;
   color: #ffffff;
-  font-family: "Montserrat";
+  font-family: "Hind";
 }
 .custom-btn.custom-btn-bg:hover {
   background: #161719;
   color: #ffffff !important;
-  font-family: "Montserrat";
+  font-family: "Hind";
 }
 
 .number-title {
@@ -140,6 +141,7 @@ b, strong {
   color: #161719;
   font-weight: 500;
   border-radius: 50px;
+  font-family: "Hind";
   padding: 13px 29px;
   font-size: 22px;
   line-height: normal;
@@ -170,6 +172,7 @@ b, strong {
 
 .animated-item {
   color: #725CFF;
+  font-family: "Montserrat";
 }
 
 .animated-item {
@@ -773,11 +776,12 @@ color: #161719;
 }
 @media (max-width: 580px) {
 	.animated-info {
-		min-width: 200px;
+		min-width: 300px;
 	}
   .animated-item {
-    font-size: 30px;
+    font-size: 28px;
   }
+  
 
   .custom-btn-group {
     text-align: center;
