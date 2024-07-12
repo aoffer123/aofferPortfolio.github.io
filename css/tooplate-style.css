@@ -465,6 +465,17 @@ color: #161719;
   background: #0d0c15;
   color: #ffffff;
 }
+.dark-mode p, .dark-mode .title-header, .dark-mode .custom-btn2, .dark-mode .skill-name, .dark-mode .skill-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode .timeline-section {
+  background-color: #0c0c0d;
+}
+
+.dark-mode .timeline-content p {
+  color: #ffffff;
+}
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
