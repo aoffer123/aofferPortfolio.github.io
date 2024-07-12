@@ -15,10 +15,12 @@ h2 {
 }
 
 .project-item {
+    position: relative;
     flex: 1 1 30%;
     max-width: 30%;
     padding: 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .project-item img {
@@ -29,4 +31,44 @@ h2 {
 
 .project-item:hover img {
     transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    transition: transform 0.5s ease;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }

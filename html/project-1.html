@@ -3,96 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio</title>
     
-    <style>
-    @import url("https://fonts.googleapis.com/css?family=Montserrat");
-    @import url("https://fonts.googleapis.com/css?family=Hind");
-    body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Hind";
-    padding-top: 4rem;
-    background-color: #fbfffe; /* Optional: set a background color */
-    }
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/unicons.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/tooplate-style.css">
 
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 8px; /* Optional: add rounded corners */
-    overflow: hidden;
-}
-
-.project-image {
-    flex: 1 1 60%;
-    max-width: 60%;
-    padding: 10px;
-}
-
-.project-details {
-    flex: 1 1 40%;
-    max-width: 40%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project-image img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 0.5rem rgb(184, 187, 215));
-}
-
-.project-details h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-family: "Montserrat";
-}
-
-.project-details p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-family: "Hind";
-}
-
-.project-details .project-info {
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .project-container {
-        flex-direction: column;
-    }
-    .project-image, .project-details {
-        max-width: 100%;
-        flex: 1 1 100%;
-    }
-    .project-details {
-        padding: 10px;
-    }
-}
-    </style>
+    <!-- MAIN STYLE -->
+    
+    
+    
 </head>
 <body>
-    <div class="container-fluid project-container">
-        <div class="project-image">
-            <img src="../images/project/Body2.svg" alt="Project Image">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light" style="background-color: #fbfffe;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: #725CFF;" href="index.html"><i class='uil uil-user'></i> Allison</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.html#home" class="nav-link"><span data-hover="Home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#portfolio" class="nav-link"><span data-hover="Portfolio">Portfolio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#experience" class="nav-link"><span data-hover="Experience & Education">Experience & Education</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><span data-hover="Project Gallery">Project Gallery</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        
+                      </div>
+                    </div>
+                </ul>
+            </div>
         </div>
-        <div class="project-details">
-            <h1>Fooducate</h1>
-            <p>I made an app for Detroit's sushi restaurant, Maru, to deliver meals directly to the doors of customers.</p>
-            <p class="project-info">The Product:</p>
-            <p>Detroit sushi restaurant needs an app for delivery orders.</p>
-            <p class="project-info">Project Duration:</p>
-            <p>January - March 2022</p>
-            <p class="project-info">The Problem:</p>
-            <p>During the pandemic, people are ordering delivery more often. This app helps fill that need by delivering on demand.</p>
-            <p class="project-info">The Goal:</p>
-            <p>[Your goal description here]</p>
+    </nav>
+
+    <div class="container-fluid project-container">
+        <div class="project-page">
+            <div class="project-overview">
+                <div class="project-logo">
+                <img class="img-fluid" src="../images/project/nutritionlogo.svg" alt="fooducate logo"/>
+                <h1 style="color: #161719;">Fooducate</h3>
+                </div>
+                <a href="../html/images.html" class="btn custom-btn custom-btn-bg custom-btn-link">Back to gallery</a>
+                <p class="pt-4">This application was created to be a simple, innovative and user-friendly solution for efficient nutrition tracking </p>
+            </div>
+            <div class="content-container">
+            <div class="project-image">
+                <img src="../images/project/Body2.svg" alt="Project 1">
+            </div>
+            <div class="project-details">
+                <h3 class="mb-4" style="color: #725CFF;">Project Overview</h3>
+                <div class="d-flex flex-column">
+                <p class="label-text">Project Duration: </p>
+                    <p class="small-label-text">January - March 2022</p>
+                </div>
+                <div class="d-flex flex-column">
+                <p class="label-text">The Problem: </p>
+                    <p class="small-label-text">In today’s fast-paced world, many individuals struggle to maintain a healthy diet due to a lack of time, knowledge, and resources. Traditional methods of meal planning and diet tracking are often cumbersome and not user-friendly, leading to poor adherence to nutritional goals. Furthermore, personalized nutritional guidance is typically inaccessible or expensive for the average person.</p>
+                </div>
+                <div class="d-flex flex-column">
+                <p class="label-text">Our Solution: </p>
+                    <p class="small-label-text">To address these issues, we designed the Fooducate web application, which aims to be a user-friendly, simple, and effective tool for meal planning and diet tracking. The integration of an AI chatbot nutrition coach provides personalized guidance, making healthy eating more accessible and achievable for everyone.</p>
+                </div>
+            </div>
+            </div>
+            <div class="content-container">
+            
+            <div class="project-details">
+                <h3 class="mb-4" style="color: #725CFF;">Planning</h3>
+                <div class="d-flex flex-column">
+                    
+                    <ul>
+                        <div class="d-flex flex-column">
+                            <li><p class="label-text">Main goal identification & Implementation</p> 
+                                <p class="small-label-text">Our primary objective was to develop an application that promotes healthy eating habits through a streamlined, intuitive user experience. The app addresses and effectively aimed to solve the key issues of existing meal planning and diet tracking tools: complexity and time consumption, lack of personalization, limited accessibility, and poor user engagement.</p></li>
+                                <p class="small-label-text">Our functionality goals included comprehensive meal planning, accurate diet tracking, and an AI-powered chatbot for personalized nutritional guidance. We prioritized tasks in a detailed product backlog and utilized scrum methodology to manage development sprints efficiently. We identified the technology stack to build a robust and user-friendly application included React JS, Firebase, GPT API, Vision AI google, VS code, and github.</p></li>
+                                <p class="small-label-text">This structured planning approach ensured a clear vision and roadmap, guiding us towards the successful development of the Fooducate web application.</p>
+                        </div>
+                        
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="../images/project/Body2.svg" alt="Project 1">
+            </div>
+            </div>
+            <div class="content-container">
+            <div class="project-image">
+                <img src="../images/project/Body2.svg" alt="Project 1">
+            </div>
+            <div class="project-details">
+                <h3 class="mb-4" style="color: #725CFF;">Design Process</h3>
+                <div class="d-flex flex-column">
+                    
+                    <ul>
+                        <div class="d-flex flex-column">
+                            <li><p class="label-text">Research & Wireframes</p> 
+                                <p class="small-label-text">The design process began with extensive research of existing applications in the market. This phase involved analyzing competitors to identify best practices, common features, and user pain points. By understanding what worked well and what didn't, I was able to gather valuable insights that informed our design decisions.</p></li>
+                                <p class="small-label-text">Following the research phase, I created paper wireframes to quickly visualize the layout and functionality of our application. These low-fidelity sketches allowed us to iterate rapidly and refine our ideas.</p></li>
+                                
+                        </div>
+                        
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="content-container">
+            
+            <div class="project-details">
+                <h3 class="mb-4" style="color: #725CFF;">Design Process</h3>
+                <div class="d-flex flex-column">
+                    
+                    <ul>
+                        <div class="d-flex flex-column">
+                            <li><p class="label-text">High-fidelity Prototypes</p> 
+                                <p class="small-label-text">After finalizing the paper wireframes, I took on the responsibility of developing high-fidelity prototypes using advanced design tools. These prototypes included detailed visual design elements, interactions, and animations to closely mimic the final product. My focus was on ensuring the design was visually appealing and user-friendly. The prototypes were created using Figma, which allowed for precise control over the design elements and seamless collaboration with the development team.</p></li>
+                                <p class="small-label-text">In addition to visual elements, I incorporated interactive components to simulate user interactions and workflows. This allowed for thorough testing and validation of the user experience before moving into the development phase. The high-fidelity prototypes were presented to stakeholders for feedback and approval, ensuring that all design aspects met user needs and expectations. This process was crucial for identifying any potential issues early and making necessary adjustments to create a seamless and intuitive final product.</p></li>
+                                
+                        </div>
+                        
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="../images/project/Body2.svg" alt="Project 1">
+            </div>
+            </div>
+            <div class="content-container">
+            <div class="project-image">
+                <img src="../images/project/Body2.svg" alt="Project 1">
+            </div>
+            <div class="project-details">
+                <h3 class="mb-4" style="color: #725CFF;">Development</h3>
+                <div class="d-flex flex-column">
+                    
+                    <ul>
+                        <div class="d-flex flex-column">
+                            <li><p class="label-text">Implementation</p> 
+                                <p class="small-label-text">As the lead front-end developer, I was responsible for translating the high-fidelity wireframes into functional code for each page of the application. Utilizing React JS and the MUI component library, I implemented a responsive and interactive user interface. This involved creating reusable components, managing state with React's hooks, and ensuring a seamless user experience across different devices and screen sizes. My focus was on maintaining clean, modular code and adhering to best practices in front-end development.</p></li>
+                                <p class="small-label-text">In addition to front-end implementation, I also set up the Firebase database to facilitate integration with the application. This included configuring Firebase Authentication for user management and Firestore for real-time data storage. My role involved writing the necessary backend code to connect the React components to the Firebase services, ensuring secure and efficient data handling. This setup allowed for real-time updates and a smooth user experience, critical for the functionality of our meal planner and diet tracker.</p></li>
+                                
+                        </div>
+                        
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            </div>
         </div>
     </div>
+
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/skills.js"></script>
+    
 </body>
 </html>
