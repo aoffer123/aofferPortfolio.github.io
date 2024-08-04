@@ -10,24 +10,84 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/tooplate-style.css">
+    
+    <style>
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
 
-    <!-- MAIN STYLE -->
-    
-    <link rel="stylesheet" href="../css/images.css">
-    
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            position: relative;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .project-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .project-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .image-container {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            justify-content: center;
+            display: flex;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar mb-4 navbar-expand-sm navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" style="color: #725CFF;" href="index.html"><i class='uil uil-user'></i> Allison</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -55,51 +115,49 @@
 
     <div class="container-fluid pt-4 text-center">
         <h2>Project Gallery</h2>
-        <div class="project-grid">
-            <div class="project-item">
+        <div class="row">
+            <div class="project-item col-12 col-md-6">
                 <a href="../html/project-1.html">
-                <div class="image-container">
-                <img src="../images/project/fooducate.svg" alt="Project 1">
-                </div>
-                <div class="overlay">
-                        <div class="text"> Fooducate</div>
-                </div>
+                    <div class="image-container">
+                        <img src="../images/project/fooducate.svg" alt="Project 1">
+                        <div class="overlay">
+                            <div class="text">Fooducate</div>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="project-item">
+            <div class="project-item col-12 col-md-6">
                 <a href="../html/project-3.html">
-                 <div class="image-container">
-                <img src="../images/project/NewLeafPortfolio.svg" alt="Project 3">
-                </div>
-                <div class="overlay">
-                        <div class="text"> New Leaf</div>
-                </div>
+                    <div class="image-container">
+                        <img src="../images/project/NewLeafPortfolio.svg" alt="Project 3">
+                        <div class="overlay">
+                            <div class="text">New Leaf</div>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="project-item">
+            <div class="project-item col-12 col-md-6">
                 <a href="../html/project-4.html">
-                 <div class="image-container">
-                <img src="../images/project/v3j.jpg" alt="Project 4">
-                </div>
-                <div class="overlay">
-                        <div class="text"> Keystone fleet mobile</div>
-                </div>
+                    <div class="image-container">
+                        <img src="../images/project/v3j.jpg" alt="Project 4">
+                        <div class="overlay">
+                            <div class="text">Keystone fleet mobile</div>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="project-item">
+            <div class="project-item col-12 col-md-6">
                 <a href="../html/project-2.html">
                     <div class="image-container">
-                <img src="../images/project/IrcaVehiclesSvg.svg" alt="Project 2">
-                </div>
-                <div class="overlay">
-                        <div class="text">Keystone Fleet Front-end</div>
-                </div>
+                        <img src="../images/project/IrcaVehiclesSvg.svg" alt="Project 2">
+                        <div class="overlay">
+                            <div class="text">Keystone Fleet Front-end</div>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
-
-    
 
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
@@ -111,6 +169,5 @@
     <script src="../js/custom.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/skills.js"></script>
-    
 </body>
 </html>
