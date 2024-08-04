@@ -1,0 +1,59 @@
+.project-new-image {
+    position: relative;
+}
+.project-new-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-new-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+   width: 140px;
+   height: 140px;
+            background-color: #6c757d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+        }
+.icon img {
+    width: 70%;
+   height: 70%;
+        }
+
+.mobile-image {
+    width: auto;
+    height: 30rem;
+    padding-bottom: 1rem;
+}
+
+.card-img-title {
+    font-size: 18px;
+    height: 100%;
+    align-self: center;
+}
+
+.settings-image {
+    width: 55%;
+    height: auto;
+    
+}
+
+.ops-image {
+    height: auto;
+    width: 100%;
+}
+
+.fooducate-image {
+   height: '100%';
+   width: auto;
+}

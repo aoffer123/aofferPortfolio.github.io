@@ -16,7 +16,7 @@ h2 {
 
 .project-item {
     position: relative;
-    flex: 1 1 30%;
+    flex: 1 1 40%;
     max-width: 50%;
     margin: 2px;
     cursor: pointer;
@@ -56,15 +56,15 @@ h2 {
     overflow: hidden;
     justify-content: center;
     display: flex;
-    background-color: #725cff;
+    
 }
 
 .image-container img {
     width: 80%;
     height: auto;
     object-fit: cover; /* Ensures the image covers the entire container */
-    transition: transform 0.5s ease;
-    background-color: #725cff;
+    
+    
 }
 
 .text {

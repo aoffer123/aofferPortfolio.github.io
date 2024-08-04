@@ -46,58 +46,28 @@
                         <a href="../html/images.html" class="nav-link"><span data-hover="Project Gallery">Project Gallery</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../html/resume.html" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                        <a href="./resume.html" class="nav-link"><span data-hover="Resume">Resume</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid pt-4 text-center">
-        <h2>Project Gallery</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <a href="../html/project-1.html">
-                <div class="image-container">
-                <img src="../images/project/fooducate.svg" alt="Project 1">
-                </div>
-                <div class="overlay">
-                        <div class="text"> Fooducate</div>
-                </div>
-                </a>
-            </div>
-            <div class="project-item">
-                <a href="../html/project-3.html">
-                 <div class="image-container">
-                <img src="../images/project/NewLeafPortfolio.svg" alt="Project 3">
-                </div>
-                <div class="overlay">
-                        <div class="text"> New Leaf</div>
-                </div>
-                </a>
-            </div>
-            <div class="project-item">
-                <a href="../html/project-4.html">
-                 <div class="image-container">
-                <img src="../images/project/v3j.jpg" alt="Project 4">
-                </div>
-                <div class="overlay">
-                        <div class="text"> Keystone fleet mobile</div>
-                </div>
-                </a>
-            </div>
-            <div class="project-item">
-                <a href="../html/project-2.html">
-                    <div class="image-container">
-                <img src="../images/project/IrcaVehiclesSvg.svg" alt="Project 2">
-                </div>
-                <div class="overlay">
-                        <div class="text">Keystone Fleet Front-end</div>
-                </div>
-                </a>
-            </div>
-        </div>
+    <div class="container-fluid">
+     <div class="row">
+    <div class="col-6">
+    <h1>Resume</h1>
     </div>
+    <div class="col-6 d-flex justify-content-end align-items-center">
+    <button class="btn custom-btn custom-btn-bg custom-btn-link" onclick="downloadResume()">Download Resume</button>
+    </div>
+    <div class="col-12">
+    <div class="resume-content">
+      <iframe src="../assets/ResumeAllisonOffer.pdf" width="100%" height="800px"></iframe>
+    </div>
+    </div>
+    </div>  
+  </div>
 
     
 
@@ -111,6 +81,7 @@
     <script src="../js/custom.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/skills.js"></script>
+    <script src="../js/scripts.js"></script>
     
 </body>
 </html>

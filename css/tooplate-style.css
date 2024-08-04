@@ -12,7 +12,7 @@ https://www.tooplate.com/view/2115-marvel
 body {
   font-family: "Hind";
   padding-top: 4rem;
-  background-color: #fbfffe;
+  background-color: #FAFBFF;
 }
 
 .image-svg {
@@ -30,6 +30,13 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.fooducate-image {
+   height: '100%';
+   width: auto;
+   filter: drop-shadow(0 0 0.5rem rgb(184, 187, 215));
+}
+
 
 
 
@@ -131,6 +138,24 @@ b, strong {
   background: #161719;
   color: #ffffff !important;
   font-family: "Hind";
+}
+
+.custom-btn-back {
+  background: #725cff;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 12px;
+  font-family: "Hind";
+  padding: 0.75rem;
+  font-size: 15px;
+  line-height: normal;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.custom-btn-back:hover {
+  color: #FFFFFF;
+  font-family: "Hind";
+  background: #161719;
 }
 
 .number-title {
@@ -346,6 +371,7 @@ color: #161719;
 
 hr.solid {
   border-top: 2px solid #161719;
+  margin-top: 10px;
 }
 
 .after-text-one {
@@ -413,8 +439,15 @@ hr.solid {
 .project-logo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   width: 30%;
+}
+
+.app-project-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
 }
 
 .project-container {
