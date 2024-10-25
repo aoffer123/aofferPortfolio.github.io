@@ -16,7 +16,7 @@ body {
 }
 
 .image-svg {
-  filter: drop-shadow(0 0 0.5rem rgb(184, 187, 215));
+  filter: drop-shadow(0 0 5px rgb(184, 187, 215));
   padding: 1rem;
   height: 50%;
   width: 50%;
