@@ -15,9 +15,6 @@ body {
   background-color: #FAFBFF;
 }
 
-.image-svg {
-
-}
 
 .full-screen {
   padding: 8rem 0;
@@ -170,6 +167,45 @@ b, strong {
   color: #161719;
 }
 
+.back-to-projects {
+  text-align: center;
+  margin-bottom: 25px; /* Adjust margin as needed */
+  margin-top: 12px;
+}
+
+.back-link {
+  font-size: 18px; /* Adjust text size */
+  color: #454547; /* Custom gold color */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px; /* Space between icon and text */
+  position: relative;
+}
+
+.back-link i {
+  font-size: 18px; /* Match icon size with text */
+  vertical-align: middle;
+}
+
+.back-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #454547; /* Same color as text */
+  position: absolute;
+  bottom: -2px; /* Adjust position as needed */
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.back-link:hover::after {
+  width: 0%;
+}
+
+
+
 .custom-btn2 {
   color: #161719;
   font-weight: 500;
@@ -177,7 +213,10 @@ b, strong {
   font-family: "Hind";
   padding: 13px 29px;
   font-size: 22px;
+  gap: 5px;
   line-height: normal;
+  display: inline-flex;
+  align-items: center;
   overflow: hidden;
   transition: all 0.4s ease;
 }
@@ -700,6 +739,46 @@ hr.solid {
   width: 20%;
 }
 
+
+.carousel-item img {
+  height: 600px;
+  object-fit: fill;
+  border-radius: 5px;
+  border: 6px solid #ffffff;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  color: #777;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.testimonial-name {
+  
+  color: #725CFF;
+  font-weight: bold;
+}
+
+.name-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.position {
+  color: #161719;
+  font-weight: lighter;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .skill-card {
     
     color: #161719;
@@ -751,8 +830,8 @@ hr.solid {
 
 
 .timeline-section {
-    background-color: #ffffff;
-    padding: 60px 0;
+    
+    
     text-align: center;
 }
 
