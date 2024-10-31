@@ -740,9 +740,15 @@ hr.solid {
 }
 
 
+
+.carousel-item {
+  width: 100%;
+}
+
+
 .carousel-item img {
-  height: 600px;
-  object-fit: fill;
+  max-height: 75vh;
+  object-fit: contain;
   border-radius: 5px;
   border: 6px solid #ffffff;
   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
