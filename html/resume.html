@@ -1,124 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND60KYCGF8"></script>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND60KYCGF8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-ND60KYCGF8');
   </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/unicons.css" />
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../css/tooplate-style.css" />
 
-    <!-- MAIN STYLE -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/unicons.css" />
+  <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../css/tooplate-style.css" />
 
-    <link rel="stylesheet" href="../css/images.css" />
-  </head>
-  <body>
-    <nav class="navbar mb-4 navbar-expand-sm navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" style="color: #725cff" href="index.html"
-          ><i class="uil uil-user"></i> Allison</a
-        >
+  <!-- MAIN STYLE -->
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <link rel="stylesheet" href="../css/images.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="../index.html#home" class="nav-link"
-                ><span data-hover="Home">Home</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="../index.html#portfolio" class="nav-link"
-                ><span data-hover="Portfolio">Portfolio</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="../index.html#skills" class="nav-link"
-                ><span data-hover="Skills">Skills</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="../index.html#experience" class="nav-link"
-                ><span data-hover="Experience & Education"
-                  >Experience & Education</span
-                ></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="../html/images.html" class="nav-link"
-                ><span data-hover="Project Gallery">Project Gallery</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./resume.html" class="nav-link"
-                ><span data-hover="Resume">Resume</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+<body>
+  <nav class="navbar mb-4 navbar-expand-sm navbar-light">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-6">
-          <h1>Resume</h1>
-        </div>
-        <div class="col-6 d-flex justify-content-end align-items-center">
-          <button
-            class="btn custom-btn custom-btn-bg custom-btn-link"
-            onclick="downloadResume()"
-          >
-            Download Resume
-          </button>
-        </div>
-        <div class="col-12">
-          <div class="resume-content">
-            <iframe
-              src="../assets/Allison-Offer-RevResume.pdf"
-              width="100%"
-              height="800px"
-            ></iframe>
-          </div>
+      <a class="navbar-brand" style="color: #725cff" href="index.html"><i class="uil uil-user"></i> Allison</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="../index.html#home" class="nav-link"><span data-hover="Home">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#portfolio" class="nav-link"><span data-hover="Portfolio">Portfolio</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#experience" class="nav-link"><span data-hover="Experience & Education">Experience &
+                Education</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../html/images.html" class="nav-link"><span data-hover="Project Gallery">Project Gallery</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="./resume.html" class="nav-link"><span data-hover="Resume">Resume</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <h1>Resume</h1>
+      </div>
+      <div class="col-6 d-flex justify-content-end align-items-center">
+        <button class="btn custom-btn custom-btn-bg custom-btn-link" onclick="downloadResume()">
+          Download Resume
+        </button>
+      </div>
+      <div class="col-12">
+        <div class="resume-content">
+          <iframe src="../assets/Allison-Offer-RevResume.pdf" width="100%" height="800px"></iframe>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/Headroom.js"></script>
-    <script src="../js/jQuery.headroom.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/smoothscroll.js"></script>
-    <script src="../js/custom.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="../js/skills.js"></script>
-    <script src="../js/scripts.js"></script>
-  </body>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/Headroom.js"></script>
+  <script src="../js/jQuery.headroom.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/smoothscroll.js"></script>
+  <script src="../js/custom.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="../js/skills.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+
 </html>
