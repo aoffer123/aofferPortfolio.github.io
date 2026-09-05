@@ -109,6 +109,17 @@
     loop();
   }
 
+  // ---------- testimonial marquee, tap to pause on touch ----------
+  var testiMarquee = document.getElementById('testiMarquee');
+
+  if (testiMarquee) {
+    testiMarquee.addEventListener('pointerup', function (e) {
+      if (e.pointerType === 'touch') {
+        testiMarquee.classList.toggle('paused');
+      }
+    });
+  }
+
   // ---------- stat count-up ----------
   var counters = document.querySelectorAll('[data-count-to]');
   function animateCount(el) {
